@@ -37,7 +37,7 @@
             <actionGroup ref="AdminLogoutActionGroup" stepKey="logoutFromAdmin"/>
         </after>
         <!--Create user role-->
-        <actionGroup ref="AdminFillUserRoleRequiredDataActionGroup" stepKey="fillUserRoleRequiredData">
+        <actionGroup ref="AdminFillUserRoleRequiredDataActionGroup" stepKey="fillUserRoleRequiredData1">
             <argument name="User" value="adminRole"/>
             <argument name="restrictedRole" value="Adobe Stock"/>
         </actionGroup>
