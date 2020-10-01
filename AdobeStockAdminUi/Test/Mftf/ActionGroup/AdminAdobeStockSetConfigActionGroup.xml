@@ -14,7 +14,6 @@
             <argument name="apiKey" type="string" defaultValue="{{AdobeStockConfigDataApiKey.value}}"/>
             <argument name="privateKey" type="string" defaultValue="{{AdobeStockConfigDataPrivateKey.value}}"/>
         </arguments>
-        <amOnPage url="{{AdminConfigSystemPage.url}}" stepKey="navigateToSystemConfigurationPage" />
         <waitForPageLoad stepKey="waitForPageLoad"/>
         <scrollTo selector="{{AdminConfigSystemSection.adobeStockIntegration}}" stepKey="scrollToAdobeStockIntegrationSection"/>
         <conditionalClick stepKey="expandAdobeStockIntegrationTab" selector="{{AdminConfigSystemSection.adobeStockIntegration}}" dependentSelector="{{AdminConfigSystemSection.isEnabledField}}" visible="false" />
