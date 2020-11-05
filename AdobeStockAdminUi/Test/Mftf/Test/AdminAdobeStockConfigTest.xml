@@ -20,12 +20,12 @@
             <group value="adobe_stock_integration_configuration"/>
         </annotations>
         <before>
-            <actionGroup ref="LoginActionGroup" stepKey="loginGetFromGeneralFile"/>
+            <actionGroup ref="LoginActionGroup1" stepKey="loginGetFromGeneralFile"/>
         </before>
         <after>
-            <actionGroup ref="logout" stepKey="logout"/>
+            <actionGroup ref="logout1" stepKey="logout"/>
         </after>
-        <actionGroup ref="AdminOpenAdobeStockConfigActionGroup" stepKey="navigateToAdobeStockConfigurationFieldset"/>
+        <actionGroup ref="AdminOpenAdobeStockConfigActionGroup1" stepKey="navigateToAdobeStockConfigurationFieldset"/>
         <actionGroup ref="AssertAdminAdobeStockConfigFieldsActionGroup" stepKey="checkAdobeStockConfigurationFields"/>
         <actionGroup ref="AssertAdminAdobeStockConnectionTestActionGroup" stepKey="testConnection"/>
     </test>

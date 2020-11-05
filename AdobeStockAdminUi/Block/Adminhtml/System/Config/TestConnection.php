@@ -53,17 +53,6 @@ class TestConnection extends Field
         parent::__construct($context, $data);
     }
 
-    /**
-     * Remove element scope and render form element as HTML
-     *
-     * @param AbstractElement $element
-     * @return string
-     */
-    public function render(AbstractElement $element): string
-    {
-        $element->setData('scope', null);
-        return parent::render($element);
-    }
 
     /**
      * Get the button and scripts contents
