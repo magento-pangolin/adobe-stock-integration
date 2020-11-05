@@ -36,23 +36,4 @@ interface AssetRepositoryInterface
      * @return \Magento\AdobeStockAssetApi\Api\Data\AssetSearchResultsInterface
      */
     public function getList(SearchCriteriaInterface $searchCriteria) : AssetSearchResultsInterface;
-
-    /**
-     * Get asset by id
-     *
-     * @param int $id
-     *
-     * @return \Magento\AdobeStockAssetApi\Api\Data\AssetInterface
-     * @throws \Magento\Framework\Exception\NoSuchEntityException
-     */
-    public function getById(int $id) : AssetInterface;
-
-    /**
-     * Delete asset
-     *
-     * @param int $id
-     * @return void
-     * @throws Exception
-     */
-    public function deleteById(int $id): void;
 }
